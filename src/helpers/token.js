@@ -1,6 +1,6 @@
 import fs from 'fs';
 import jwt from 'jsonwebtoken';
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 
 import { token as tokenOpts } from '../config';
 import { priKeyPath, pubKeyPath } from '../jwtcert';
